@@ -1,0 +1,19 @@
+/* 現場秒點名前台專用樣式 */
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* 隱藏原生捲軸但保留平滑滾動 */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 按鈕點擊觸感回饋 */
+button:active {
+  transform: scale(0.97);
+}
